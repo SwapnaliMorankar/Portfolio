@@ -3,8 +3,9 @@ import './Contact.css';
 import mail from '../../assets/mail-icon.png';
 import call from '../../assets/call-icon.png';
 import location from '../../assets/location-icon.png';
-// Load environment variables
-require('dotenv').config();
+
+const ACCESS_KEY = import.meta.env.VITE_ACCESS_KEY;
+
 
 // Use the environment variable
 
@@ -16,9 +17,7 @@ const Contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target);
 
-    // formData.append("access_key", "f7ea417f-9586-4b62-a4a2-6d11779d840d");
-formData.append("access_key", import.meta.env.VITE_ACCESS_KEY);
-
+formData.append("access_key", ACCESS_KEY);
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);

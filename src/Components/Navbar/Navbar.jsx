@@ -30,7 +30,7 @@ const Navbar = () => {
               <li><Link to="/projects">Projects</Link></li>
               <li><Link to="/position-of-responsibility">Position of Responsibility</Link></li>
               <div className="nav-connect">
-                <HashLink smooth to="/home#connect">Connect With Me</HashLink>
+                <HashLink smooth to="/#connect">Connect With Me</HashLink>
               </div>
             </ul>
           </div>
