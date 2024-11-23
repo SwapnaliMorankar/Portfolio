@@ -8,53 +8,51 @@ import travel5 from '../../assets/travel5.jpg'
 
 const Travel = () => {
   return (
-    <div class="outercard">
-      <div className="innercard">
-        <div class="circle">
+    <div className="outercard3">
+      <div className="innercard3">
+        <div className="circle3">
           <img src={travel1} alt="Image" />
         </div>
-        <div class="rectangle">
+        <div className="rectangle3">
           <p>Mahabaleshwar</p>
         </div>
       </div>
 
-      <div className="innercard">
-        <div class="circle">
+      <div className="innercard3">
+        <div className="circle3">
           <img src={travel2} alt="" />
         </div>
-        <div class="rectangle">
+        <div className="rectangle3">
           <p>Tamhini Ghat</p>
         </div>
       </div>
 
-      <div className="innercard">
-        <div class="circle">
+      <div className="innercard3">
+        <div className="circle3">
           <img src={travel3} alt="" />
         </div>
-        <div class="rectangle">
+        <div className="rectangle3">
           <p>Visapur Fort</p>
         </div>
       </div>
 
-      <div className="innercard">
-        <div class="circle">
+      <div className="innercard3">
+        <div className="circle3">
           <img src={travel4} alt="" />
         </div>
-        <div class="rectangle">
+        <div className="rectangle3">
           <p>Khadakwasla</p>
         </div>
       </div>
 
-      <div className="innercard">
-        <div class="circle">
+      <div className="innercard3">
+        <div className="circle3">
           <img src={travel5} alt="" />
         </div>
-        <div class="rectangle">
+        <div className="rectangle3">
           <p>Sinhgad Fort</p>
         </div>
       </div>
-
-
     </div>
   )
 }
