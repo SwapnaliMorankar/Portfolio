@@ -56,7 +56,7 @@ const Navbar = () => {
             <li><Link to="/work-experience" onClick={toggleMenu}>Work Experience</Link></li>
             <li><Link to="/projects" onClick={toggleMenu}>Projects</Link></li>
             <li><Link to="/position-of-responsibility" onClick={toggleMenu}>Position of Responsibility</Link></li>
-            <li><HashLink smooth to="/home#connect" onClick={toggleMenu}>Connect With Me</HashLink></li>
+            <li><HashLink smooth to="/#connect" onClick={toggleMenu}>Connect With Me</HashLink></li>
             <li><Link to="/certifications" onClick={toggleMenu}>Certifications and Trainings</Link></li>
             <li><Link to="/co-curricular" onClick={toggleMenu}>Co-Curricular Activities</Link></li>
             <li><Link to="/extra-curricular" onClick={toggleMenu}>Extra Curricular Engagements</Link></li>
