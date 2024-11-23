@@ -1,0 +1,126 @@
+.trainings{
+    display: flex;
+    flex-direction: column;
+    gap: 90px; 
+    width: 100%;
+    margin-top: 100px;
+}
+
+.training{
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 42%;
+    border: 2px solid #FFF;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.third, .fourth{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.training:hover{
+    transform: scale(1.05);
+}
+
+.training-right h1{
+    line-height: 40px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.training-right h3, h2{
+    line-height: 40px;
+}
+
+.training-right p{
+    line-height: 30px;
+}
+
+.training-right a{
+    line-height: 40px;
+    color: #B923E1;
+    transition: 0.5s;
+}
+
+.training-right a:hover{
+    color: #DA7C25;
+}
+
+.heading{
+    text-align: center;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .trainings {
+        gap: 50px;
+    }
+
+    .training {
+        width: 60%;
+        margin: 0 auto; /* Center the training items */
+    }
+
+    .third, .fourth {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .training-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .training-right h1 {
+        font-size: 22px;
+    }
+
+    .training-right p {
+        font-size: 14px;
+    }
+
+    .training-right a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trainings {
+        gap: 30px;
+    }
+
+    .training {
+        width: 80%;
+    }
+
+    .third, .fourth {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .training-right h1 {
+        font-size: 20px;
+    }
+
+    .training-right p {
+        font-size: 12px;
+    }
+
+    .training-right a {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+}

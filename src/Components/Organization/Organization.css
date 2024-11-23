@@ -1,0 +1,239 @@
+.organizations {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* Common style for all hack divs */
+.organization {
+    padding: 25px 0px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+}
+
+
+/* Scale effect on hover */
+.organization:hover {
+    transform: scale(1.05);
+    border: transparent;
+    box-shadow: none;
+}
+
+.organization:hover::before,
+.organization:hover::after {
+    content: '';
+    position: absolute;
+    width: 150px; 
+    height: 150px; 
+    border: 2px solid #DA7C25;
+}
+
+.organization:hover::before {
+    top: -1px;
+    left: -1px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.organization:hover::after {
+    bottom: -1px;
+    right: -1px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Style for odd hack divs (left aligned) */
+.organization:nth-child(odd) {
+    margin-right: auto;
+    justify-content: space-evenly;
+}
+
+/* Style for even hack divs (right aligned) */
+.organization:nth-child(even) {
+    margin-left: auto;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+/* Shared styling for hack-left and hack-right sections */
+.organization-left {
+    width: 30%;
+}
+
+.organization-left img {
+    width: 320px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.organization-right {
+    width: 40%;
+}
+
+.organization-right h1 {
+    line-height: 40px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.organization-right h3, .hack-right h2 {
+    line-height: 40px;
+}
+
+.organization-right p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.organization-right a {
+    line-height: 40px;
+    color: #B923E1;
+    transition: color 0.5s;
+}
+
+.organization-right a:hover {
+    color: #DA7C25;
+}
+/* Responsive Styles */
+
+/* For large screen devices (Desktop) */
+@media (max-width: 1231px) {
+    .organization {
+        width: 85%;
+        padding: 20px 0px;
+    }
+
+    .organization-left img {
+        width: 280px;
+        height: 260px;
+    }
+
+    .organization-right h1 {
+        font-size: 1.2rem;
+    }
+
+    .organization-left, .organization-right {
+        width: 45%;
+    }
+}
+
+/* For tablet devices (768px to 1024px) */
+@media (max-width: 1024px) {
+    .organization {
+        width: 85%;
+        padding: 20px 0px;
+    }
+
+    .organization-left img {
+        width: 280px;
+        height: 260px;
+    }
+
+    .organization-right h1 {
+        font-size: 1.2rem;
+    }
+
+    .organization-left, .organization-right {
+        width: 45%;
+    }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 768px) {
+    .organization {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .organization-left {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .organization-left img {
+        width: 250px;
+        height: 230px;
+    }
+
+    .organization-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .organization-right h1 {
+        font-size: 1.1rem;
+        line-height: 35px;
+    }
+
+    .organization-right h3, .organization-right h2, .organization-right p {
+        line-height: 25px;
+    }
+
+    .organization-right a {
+        font-size: 14px;
+    }
+
+    .organization:nth-child(odd) {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .organization:nth-child(even) {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* For small mobile devices (below 480px) */
+@media (max-width: 480px) {
+    .organization {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .organization-left img {
+        width: 200px;
+        height: 180px;
+    }
+
+    .organization-right h1 {
+        font-size: 1rem;
+    }
+
+    .organization-right h3, .organization-right h2, .organization-right p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .organization-right a {
+        font-size: 12px;
+    }
+
+    .organization:nth-child(odd) {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .organization:nth-child(even) {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}

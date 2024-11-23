@@ -1,0 +1,88 @@
+.connects {
+    margin-top: 120px;
+    padding: 0 20px;
+}
+.connect-title {
+    position: relative; 
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.connect-title::after {
+    content: '';
+    position: absolute;
+    left: 50%; 
+    bottom: -4px; 
+    height: 2px;
+    width: 10%; 
+    background-color: #B923E1; 
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%); 
+    z-index: -1;
+}
+.connect-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.connect {
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 60px;
+    border: 2px solid #B923E1; 
+    text-align: center;
+    padding-top: 18px;
+    border-radius: 30px;
+    font-size: large;
+    box-shadow: 0px 4px 8px 0px rgba(180, 21, 255, 0.5);
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* LinkedIn hover effect */
+.one:hover {
+    background-color: #0076B7;
+    transform: scale(1.1);
+    box-shadow: none;
+    border: 2px solid #0076B7;
+}
+
+/* GitHub hover effect */
+.two:hover {
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: none;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .connect-cont {
+        gap: 40px;
+    }
+
+    .connect {
+        width: 180px;
+        height: 55px;
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .connect-title {
+        font-size: 26px;
+    }
+
+    .connect {
+        width: 160px;
+        height: 50px;
+        padding-top: 14px;
+        font-size: medium;
+    }
+}

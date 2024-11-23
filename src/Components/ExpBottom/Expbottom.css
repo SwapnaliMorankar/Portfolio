@@ -1,0 +1,38 @@
+.expbottom {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+}
+
+/* For screen widths up to 1200px */
+@media (max-width: 1200px) {
+    .expbottom {
+        font-size: medium;
+        margin-top: 60px;
+    }
+}
+
+/* For screen widths up to 992px */
+@media (max-width: 992px) {
+    .expbottom {
+        font-size: medium;
+        margin-top: 50px;
+    }
+}
+
+/* For screen widths up to 768px */
+@media (max-width: 768px) {
+    .expbottom {
+        font-size: small;
+        margin-top: 40px;
+    }
+}
+
+/* For screen widths up to 480px */
+@media (max-width: 480px) {
+    .expbottom {
+        font-size: small;
+        margin-top: 30px;
+    }
+}

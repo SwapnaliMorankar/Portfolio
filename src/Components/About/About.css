@@ -1,0 +1,140 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+.about-title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.about-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    height: 2px;
+    width: 70%;
+    background-color: #B923E1;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.about-sections {
+    display: flex;
+    gap: 100px;
+    border: 2px solid #FFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-left img {
+    height: 420px;
+    width: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Flex adjustment for smaller screens */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .about-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .about-left img {
+        height: auto; /* Keep aspect ratio */
+        width: 100%; /* Responsive width */
+    }
+    .about-right {
+        font-size: 16px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 28px;
+    }
+    .about-sections {
+        padding: 20px;
+    }
+    .about-right {
+        font-size: 16px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 24px;
+    }
+    .about-sections {
+        padding: 15px;
+    }
+    .about-right {
+        font-size: 14px;
+        gap: 15px;
+    }
+}
+
+/* About achievement section adjustments for smaller screens */
+.about-achievement {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .about-achievement {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.about-achieve {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.about-achieve:hover {
+    transform: scale(1.1);
+}
+
+.about-achieve h1 {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 42px;
+}
+
+.about-achieve p {
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,274 @@
+.nav-menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-connect a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    /* background-color: #1a1a1a;  */
+}
+
+.navbar img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.menu1 {
+    width: 10%;
+    height: 100%;
+    margin: 20px 50px;
+}
+
+.menu2 {
+    width: 70%;
+    height: 100%;
+}
+
+.menu2 li {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu2 li:hover {
+    color: #DA7C25;
+    text-decoration: underline;
+}
+
+.menu3 {
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu4 {
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 17px;
+}
+
+.nav-connect {
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 60px;
+    width: 170px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.line {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+/* Reset link styles */
+.nav-menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-connect a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    /* background-color: #1a1a1a;  */
+}
+
+.navbar img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* Desktop menu styles */
+.menu1 {
+    width: 10%;
+    height: 100%;
+    margin: 20px 50px;
+}
+
+.menu2 {
+    width: 70%;
+    height: 100%;
+}
+
+.menu2 li {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.menu2 li:hover {
+    color: #DA7C25;
+    text-decoration: underline;
+}
+
+.menu3 {
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu4 {
+    width: 80%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 17px;
+}
+
+.nav-connect {
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 60px;
+    width: 170px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.line {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+    display: none;
+}
+
+/* Hide the hamburger icon on big screens by default */
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 1231px) {
+    .nav-connect{
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-connect{
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Hide the regular menu on small screens */
+    .menu2 {
+        display: none;
+    }
+
+    /* Display the hamburger menu icon on small screens */
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        z-index: 10;
+        width: 30px;
+        height: 30px;
+    }
+
+    /* When menuOpen is true, show the mobile menu */
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        width: 50%;
+        background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        z-index: 5;
+        border-radius: 5px;
+    }
+
+    /* Mobile menu styles */
+    .mobile-nav-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Links within the mobile menu */
+    .mobile-nav-menu li a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    /* Adjusting the nav-connect button for mobile */
+    .nav-connect {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 10px;
+    }
+}

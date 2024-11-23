@@ -1,0 +1,146 @@
+.positions {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 50px 0px;
+}
+
+.position {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 0px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.position:hover {
+    transform: scale(1.05);
+}
+
+.position-left {
+    width: 30%;
+}
+
+.position-left img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.expanded-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.expanded-image {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.position-right {
+    width: 40%;
+}
+
+.position-right h1 {
+    line-height: 40px;
+    background: linear-gradient(267deg, #DA7C25 50%, #B923E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.position-right h3, h2 {
+    line-height: 40px;
+}
+
+.position-right p {
+    line-height: 30px;
+}
+
+.position-right a {
+    line-height: 40px;
+    color: #B923E1;
+    transition: 0.5s;
+}
+
+.position-right a:hover {
+    color: #DA7C25;
+}
+
+.position-right button {
+    margin-top: 15px;
+    width: 125px;
+    height: 40px;
+    background-color: #161513;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: Outfit;
+    border-radius: 8px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.position-right button:hover {
+    color: #DA7C25;
+    border-color: #DA7C25;
+    box-shadow: 4px 4px 8px 0px rgba(218, 124, 37, 0.5);
+}
+
+.position-right .extra-details {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #FFF;
+    list-style: circle;
+    line-height: 30px;
+}
+
+@media (max-width: 1024px) {
+    .position {
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 0;
+    }
+
+    .position-left img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .position-right {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .position-left img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .position-right h1 {
+        font-size: 22px;
+    }
+
+    .position-right p, .position-right h3, .position-right h2 {
+        font-size: 16px;
+    }
+
+    .position-right button {
+        width: 100px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,71 @@
+.outercard2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    grid-template-rows: auto;
+    padding: 20px 100px;
+    gap: 30px;
+  }
+  
+  .innercard2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    height: 350px;
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  
+  .circle2 {
+    height: 100%;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+  }
+  
+  .circle2 img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For medium-sized devices like tablets (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .outercard2 {
+      grid-template-columns: 1fr;  /* Display 1 column on medium-sized screens */
+      padding: 20px 50px;  /* Adjust padding */
+      gap: 20px;  /* Smaller gap between cards */
+    }
+  
+    .innercard2 {
+      height: 300px;  /* Reduce height on smaller screens */
+      width: 80%;  /* Adjust card width for smaller screens */
+    }
+  }
+  
+  /* For smaller devices like phones (max-width: 768px) */
+  @media (max-width: 768px) {
+    .outercard2 {
+      grid-template-columns: 1fr;  /* Stack cards on small screens */
+      gap: 15px;  /* Reduce gap between cards */
+      padding: 20px;  /* Further reduce padding */
+    }
+  
+    .innercard2 {
+      height: 250px;  /* Further reduce the height */
+      width: 90%;  /* Adjust width to fit smaller screens */
+    }
+  }
+  
+  /* For extra small devices (max-width: 480px) */
+  @media (max-width: 480px) {
+    .outercard2 {
+      padding: 10px;  /* Reduce padding */
+    }
+  
+    .innercard2 {
+      height: 200px;  /* Minimize card height for small screens */
+      width: 100%;  /* Use full width of the screen */
+    }
+  }
+  

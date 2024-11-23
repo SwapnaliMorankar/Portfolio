@@ -1,0 +1,148 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.first, .second {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.exp {
+    border: 1px solid #ccc;
+    padding: 30px 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 42%;
+    border: 2px solid #FFF;
+    box-shadow: 4px 4px 8px 0px rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+
+.exp:hover {
+    transform: scale(1.05);
+}
+
+.exp.expanded {
+    max-height: 700px;
+}
+
+.exp .extra-details {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #FFF;
+    list-style: circle;
+    line-height: 25px;
+    padding-left: 20px;
+}
+
+.techused {
+    font-weight: bold;
+    color: #DA7C25;
+}
+
+.exp h1 {
+    line-height: 40px;
+    background: linear-gradient(267deg, #DA7C25 50%, #B923E1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.exp h2, h3 {
+    line-height: 40px;
+}
+
+.exp p {
+    line-height: 30px;
+}
+
+.exp a {
+    line-height: 30px;
+    color: #B923E1;
+}
+
+.exp a:hover {
+    color: #DA7C25;
+}
+
+.exp button {
+    margin-top: 15px;
+    width: 125px;
+    height: 40px;
+    background-color: #161513;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: Outfit;
+    border-radius: 8px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.exp button:hover {
+    color: #DA7C25;
+    border-color: #DA7C25;
+    box-shadow: 4px 4px 8px 0px rgba(218, 124, 37, 0.5);
+}
+
+@media (max-width: 1200px) {
+    .exp {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .experience {
+        margin-top: 80px;
+    }
+    .exp {
+        width: 48%;
+        padding: 20px 20px;
+    }
+    .first, .second {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience {
+        margin-top: 60px;
+    }
+    .exp {
+        width: 100%;
+        padding: 15px 15px;
+    }
+    .first, .second {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience {
+        margin-top: 40px;
+    }
+    .exp {
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .exp h1 {
+        font-size: 18px;
+    }
+    .exp h2, .exp h3 {
+        font-size: 14px;
+    }
+    .exp p {
+        font-size: 14px;
+    }
+    .exp button {
+        width: 100px;
+        height: 35px;
+        font-size: small;
+    }
+}
